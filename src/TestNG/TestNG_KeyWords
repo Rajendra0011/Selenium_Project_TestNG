@@ -1,0 +1,52 @@
+TestNG_Keywords
+=================================
+1) invocationCount
+2) priority
+3) enabled
+4) timeOut
+5) dependOnMethod
+================================================================================================================
+1) invocationCount()
+ Sometimes same test method/TC need to be executed multiple which can be possible by using TestNG Keywords.
+   @Test(invocationCount=10)
+ ================================================================================================================  
+2) Priority
+	To change test case execution order we need to use TestNG keyword "priority".
+	
+	Ex: priority=1;
+Note Priority Can Be : 
+1) Bydefault=0
+2) +ve integer
+3) -ve integer
+4) duplicate
+
+Priority Can't Be : decimal or variable
+================================================================================================================
+3) enabled : 
+Disabled test case in TestNG can be achieved by setting the enabled attribute of the @Test annotation to false.
+
+	ex. enabled = false;
+================================================================================================================
+4) TimeOut :
+If the test class contains multiple test method if one of test method is time consuming to execute then TestNG 
+byDefault fail that test case & execute the other.
+					@Test(Timeouts=1000)
+================================================================================================================
+5) dependOnMethod()
+If one TC execution depends upon the multiple test-case then we need to use dependsOnMethod TestNG KeyWord.
+================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
