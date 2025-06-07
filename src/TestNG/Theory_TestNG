@@ -1,0 +1,79 @@
+TestNG:
+==========
+TestNG is a java unit framWork use for writing/designing of test classes.
+
+1) Emailable Report:
+========================
+Report generation is very important when you are doing the automation testing as well as for manual testing.
+
+		By looking at the report, you will come to know what the status of the project is.
+		Selenium webDriver is used for automating the web-application, but it won't generate any reports.
+		The TestNG will generate the default report.
+
+------ Steps to generate EmaiLable report----------------
+1) Execute the test class and refresh the project.
+2) You will get test-output folder.
+3) In that folder Right click on the 'emailable-report.html and select the option open with the web browser.
+
+To display text in emailable report we need to use static method log present in reporter class.
+
+Reporter.log("msg",true);   console + emailable report
+Reporter.log("Test Case Pass", false); emailable report
+
+
+TestNG Annotations:
+================================
+1) @BeforeSuite()
+2) @BeforeTest()
+3) @BeforeClass()
+4) @BeforeMethod()
+5) @Test()
+6) @AfterMethod()
+7) @AfterClass()
+8) @AfterTest()
+9) @AfterSuite()
+================================================================================================
+@BeforeSuite :
+The @Before Suite method in TestNG is used to perform one-time setup tasks that are needed before the entire test suite start running.
+1) Database connection Initialization
+2) Loading Configuration Files.(eg. properties file, JSON)
+3) Generating and Initialize Extent Report.
+4) Reading Test Data.
+5) Setting Environment variable.
+==============================================
+@BeforeTest :
+==============
+@BeforeTest annotation is used to define a method will run once before any test cases.
+@BeforeTest is commonly used to set up test level configurations.
+1) Launching Browser
+2) Initialize WebDriver.
+3) Loading environment / test Specific configuration.
+4) Data base Setup for Specific Tests.
+================================================================================================
+@BeforeClass
+=============
+@Before annotated method is executed once before the first test method in current class runs.
+@BeforeClass is ideal for class level setup tasks those that only need to happen once for the entire test class.
+1) Initialize Page Object 
+2) Open Application/Navigate to URL
+3) Extent Report Test Node Creation.
+================================================================================================
+@BeforeMethod() :
+=================
+@BeforeMethod() : annotation is used to define a method that will run before each @Test Method.
+To perform repetitive setup that should happen before every test case.
+1) login to application
+2) Navigate to common page
+3) Reset Test Data
+4) Start logging and reporting
+================================================================================================
+
+
+
+
+
+
+
+
+
+

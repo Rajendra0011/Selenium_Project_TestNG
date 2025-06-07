@@ -1,0 +1,81 @@
+POM(Page Object Model) With Page Factory
+============================================================
+It is a java design pattern use for design of classes in Test Script.
+
+Page Object model is an object design Pattern in Selenium where,
+1) WebPage are represented as classes.
+2) The various element on the webPage are defined as variables on the class.
+In this cases we will use Page Factory to initialize webElemnet that are defined in webpage classes or Page Objects.
+
+
+
+POM Strictly Follow Encapsulation Concepts :
+Data member should be declared globaly with access level private using @FindBy Annotation
+Initialize within the constructor with access level public using PageFactory.
+Utilize within the method with access level public.
+
+
+Note : 
+1) No of Data member need to be created under POM class will depends upon on element that need to be handle
+2) POM class will not contain a main method, to run the POM class we require another class with main() i,e Test
+3) Test class will contain all the navigations steps to test application.
+
+PageFactory:
+=======================================
+It is a class which contain static method like initElement
+To initialize global D.M/variable in PageFactory we need to use method within the constructor,
+			Syntax : PageFactory.initElement(driver, this);
+			
+initElement will initialize D.M by identifying each component present on webPage by Using @FindBy annotation.
+which takes locator type as an input.
+
+@FindBy(LocatorType="value" ) private WebElement D.M;
+================================================================================================================================
+Working With PageFactory:
+=================================
+1) While executing the test Script initElement method will convert all the data Member @FindBy annotation to findElement()
+this process is known as early initialization----->after creating object of POM class
+
+@FindBy(xapth="//span[text()='KV']) private WebElemnt PN
+private WebElement PN= driver.findElementBy(By.xapth());
+
+2) To perform action on component we need to call a method.
+3) Before performing each action initElement method will identifies component present or not, then It will do complete initialization
+	this process is known as late/lazy initialization---->after method call
+================================================================================================================================
+
+Advantages of POM:
+==================
+Make code reusable
+It is useful in reducing code duplication.
+It makes ease in maintaining the code
+Makes code readable(Method get more realistic Names)
+the code becomes less and optiMised.
+================================================================================================================================
+
+POM Class"
+1. POM class depends on webPage present in an application.
+2. For each POM class D.M/variable are created in enacpsulation concepts By using pageFactory.
+3. No of D.M created in POM class will depend on no of element present in webPage.
+4. Each declared D.M should initialized & utilized in POM class.
+================================================================================================================================
+
+Test Classes:
+Test Class depends upon on no test cases written by manual test engineer.
+Test class contain navigation steps & input that need to be given to the components.
+In Test data/inputs that given to external source like Excel sheet.
+================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+What is Selenium FrameWork ? types of selenium framework
+========================================================
+The selenium framework is a code structure that makes codes maintenance easy and efficient.
+Without FrameWork users may place the 'Code' and 'Data' at the same location with neither reusable nor readable.
+framework produce beneficial outcomes like increased reusability, higher portability.
+reduce the cost of scripts maintenance, better code readability etc.
+
+There are mainly three types of framework created by selenium webdriver to automate manual test cases.
+
+1) Data driven
+2) Keyword driven,
+3) Hybrid
+
+1) Data Driven
+Data driven framework in selenium is a method of separating Test Data from the test cases.
+Once the Test data separated from the test cases , it can be easily modified for a specific functionality Without Changing
+the code.
+It is used to fetch the test data from the external files like EXCEL, .CSV file,.XML,or some data base table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
