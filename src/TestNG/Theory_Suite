@@ -1,0 +1,43 @@
+Test_Suite
+==============================
+
+It is an XML File which contains all the test classes which need to be executed .
+It is use to execute all multiple test classes.
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.example_Suite_sample1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+==================================================================================================
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNG.example_Suite_FailedXMLFile">
+        <methods>
+          <include name="TC6"/>
+        </methods>
+      </class> <!-- TestNG.example_Suite_FailedXMLFile -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+===================================================================================================
+
+Failed.xml
+===========================
+1) Create testng.xml file under project folder
+2) execute testNg.XML file
+3) Refresh the project
+4) In test-Output Folder testng-failed.xml file will be created
+5) execute the testng-failed.xml file
+In this way we can handle failed testcases in testNg class
+===================================================================================================
+Disable TC Execution:
+================================
+From Test Class using  TestNG keywords enabled=false
+From Suite 
+By using exclude keyword
+By using include keyword.
+====================================================================================================
