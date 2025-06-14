@@ -1,0 +1,42 @@
+Data driven FrameWork
+============================
+
+In our Project we use the Data driven FrameWork 
+In Data driven we use the project build management for maven project.
+
+In maven having different folder structure 
+	src/main/java
+	src/main/resources
+	src/test/java
+	src/test/resources
+	
+In src/main/java folder we created all pom classes our application
+In src/test/java folder we are created all test classes of our application.
+
+In our project there is one important file POM.xml file in which we can add all dependencies regarding our project
+all downloaded jar files stored in one another folder mavendepoendencies folder.
+
+In our framework there is one supermost class i.e base class which is extended every test classes is nothing inheritance
+also we use the TestNG java unit framework for design the test classes and test Suite.
+There are different advantages of TestNg
+we can generate emailable report
+we can perform parallel execution,compatibility testing
+we can apply priority to the test cases
+There are different anotation to apply precondition post-conditions
+In our framework there are different kind of folder structure 
+testData : we can store excelsheet
+Browsers : we can store different kind of browser exe files
+Screenshot : in Screenshot folder we store different failed testcses screenshot.
+ Also we have important file like property files in which we can store important credential our application like uRL
+ userName, password.
+ and also we store all execution logs by using log4j 
+ To generate we use the extent report by using extent report in pie chart also we can add failed test cases screenshot
+ 
+In our framework there is one impoartant Utility class in which we create selenium related common function
+getaData
+capturethe Screenshot
+handle the iframe
+handle the popup.
+
+also we use the github repository to store source code our framework. for job scheduling we use the jenkins
+contineous integration tool

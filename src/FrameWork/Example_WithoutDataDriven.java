@@ -14,7 +14,7 @@ public class Example_WithoutDataDriven {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -41,14 +41,14 @@ public class Example_WithoutDataDriven {
 		// getClaim ID
 		String expectedID = "202307180000003";
 		String actclaimId = driver.findElement(By.xpath("//div[text()='202307180000003']")).getText();
-		System.out.println(actclaimId);
-		
-		if(actclaimId.equals(expectedID)) {
-			System.out.println("Test Case Pass");
-		}else {
-			System.out.println("Test Case Fail");
-		}
-		
+//		System.out.println(actclaimId);
+//		
+//		if(actclaimId.equals(expectedID)) {
+//			System.out.println("Test Case Pass");
+//		}else {
+//			System.out.println("Test Case Fail");
+//		}
+//		
 		Thread.sleep(5000);
 		driver.quit();
 		

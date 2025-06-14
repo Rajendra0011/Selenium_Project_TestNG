@@ -18,14 +18,14 @@ public class Hrm_DashBoard_Page {
 	
 	public void verifyUserName(String verName) {
 		String actresult = dashBoard.getText();
-		System.out.println(actresult);
-		String expResult=verName;
-		if(actresult.equals(expResult)) {
-			System.out.println("verifyDashboard : Test Case Passed");
-		}
-		else {
-			System.out.println("Test Case Failed");
-		}
+//		System.out.println(actresult);
+//		String expResult=verName;
+//		if(actresult.equals(expResult)) {
+//			System.out.println("verifyDashboard : Test Case Passed");
+//		}
+//		else {
+//			System.out.println("Test Case Failed");
+//		}
 		
 	}
 

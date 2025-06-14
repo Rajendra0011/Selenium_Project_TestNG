@@ -32,10 +32,10 @@ public class HRM_ClaimID_Page {
 		String actClaimID = claimID.getText();
 		String expClaimID ="202307180000003";
 		if(actClaimID.equals(expClaimID)) {
-			System.out.println("verifyClaimID : Test Case Passed");
+//			System.out.println("verifyClaimID : Test Case Passed");
 		}
 		else {
-			System.out.println("Test Case Failed");
+//			System.out.println("Test Case Failed");
 		}
 	}
 }

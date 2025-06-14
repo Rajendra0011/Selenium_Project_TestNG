@@ -1,4 +1,4 @@
-package Page_Object_Model;
+package POM_DDF_TestNG_BaseClass_UtilityClass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,16 +16,9 @@ public class Hrm_DashBoard_Page {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void verifyUserName() {
+	public String getVerifyUserName() {
 		String actresult = dashBoard.getText();
-//		System.out.println(actresult);
-//		String expResult="Gsuatvo user";
-//		if(actresult.equals(expResult)) {
-//			System.out.println("verifyDashboard : Test Case Passed");
-//		}
-//		else {
-//			System.out.println("Test Case Failed");
-//		}
+		return actresult;
 		
 	}
 

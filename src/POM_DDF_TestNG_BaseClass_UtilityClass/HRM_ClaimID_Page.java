@@ -1,4 +1,4 @@
-package POM_With_DDF;
+package POM_DDF_TestNG_BaseClass_UtilityClass;
 
 
 import org.openqa.selenium.WebDriver;
@@ -24,22 +24,8 @@ public class HRM_ClaimID_Page {
 		clickOnSearch.click();
 	}
 	
-
-	
-	public void verifyClaimID(String ID) {
+	public String getVerifyClaimID() {
 		String actClaimID = claimID.getText();
-		String expClaimID =ID;
-//		if(actClaimID.equals(expClaimID)) {
-//			System.out.println("verifyClaimID : Test Case Passed");
-//		}
-//		else {
-//			System.out.println("Test Case Failed");
-//		}
+		return actClaimID;
 	}
 }
-
-
-//WebElement clickonSearch = driver.findElement(By.xpath("//input[@class='oxd-input oxd-input--active']"));
-////clickonSearch.click();
-//clickonSearch.sendKeys("Claim");
-//driver.findElement(By.xpath("//span[text()='Claim']")).click();

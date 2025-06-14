@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.test">
+      <class name="ExtentReport.Extent_Report">
         <methods>
-          <include name="tc1"/>
+          <include name="getResult"/>
+          <include name="verifyUserName"/>
+          <include name="verifyLogo"/>
+          <include name="startReport"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestNG.test -->
+      </class> <!-- ExtentReport.Extent_Report -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

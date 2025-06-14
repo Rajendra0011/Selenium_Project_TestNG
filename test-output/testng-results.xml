@@ -1,25 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-07T18:55:36 IST" name="Suite" finished-at="2025-06-07T18:55:53 IST" duration-ms="16605">
+  <suite started-at="2025-06-08T19:06:03 IST" name="Default suite" finished-at="2025-06-08T19:06:04 IST" duration-ms="843">
     <groups>
     </groups>
-    <test started-at="2025-06-07T18:55:36 IST" name="Test1" finished-at="2025-06-07T18:55:46 IST" duration-ms="9982">
-      <class name="TestNG.Example12_parallels_execution_1">
-        <test-method signature="openFacebookApp()[pri:0, instance:TestNG.Example12_parallels_execution_1@4f83df68]" started-at="2025-06-07T18:55:36 IST" name="openFacebookApp" finished-at="2025-06-07T18:55:46 IST" duration-ms="9948" status="PASS">
+    <test started-at="2025-06-08T19:06:03 IST" name="Default test" finished-at="2025-06-08T19:06:04 IST" duration-ms="843">
+      <class name="ExtentReport.Extent_Report">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="startReport" finished-at="2025-06-08T19:06:03 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openFacebookApp -->
-      </class> <!-- TestNG.Example12_parallels_execution_1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2025-06-07T18:55:36 IST" name="Test2" finished-at="2025-06-07T18:55:53 IST" duration-ms="16605">
-      <class name="TestNG.Example12_parallels_execution_2">
-        <test-method signature="openGoogle()[pri:0, instance:TestNG.Example12_parallels_execution_2@5542c4ed]" started-at="2025-06-07T18:55:36 IST" name="openGoogle" finished-at="2025-06-07T18:55:53 IST" duration-ms="16572" status="PASS">
+        </test-method> <!-- startReport -->
+        <test-method signature="LuanchBrowser()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="LuanchBrowser" finished-at="2025-06-08T19:06:03 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openGoogle -->
-      </class> <!-- TestNG.Example12_parallels_execution_2 -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- LuanchBrowser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="getResult" finished-at="2025-06-08T19:06:03 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LuanchBrowser status=SUCCESS method=Extent_Report.LuanchBrowser()[pri:0, instance:ExtentReport.Extent_Report@1d296da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyHomePage()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="verifyHomePage" finished-at="2025-06-08T19:06:03 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="getResult" finished-at="2025-06-08T19:06:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePage status=SUCCESS method=Extent_Report.verifyHomePage()[pri:0, instance:ExtentReport.Extent_Report@1d296da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyLogo()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="verifyLogo" finished-at="2025-06-08T19:06:03 IST" duration-ms="8" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skkipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skkipped
+at ExtentReport.Extent_Report.verifyLogo(Extent_Report.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="getResult" finished-at="2025-06-08T19:06:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogo status=SKIP method=Extent_Report.verifyLogo()[pri:0, instance:ExtentReport.Extent_Report@1d296da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyUserName()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="verifyUserName" finished-at="2025-06-08T19:06:03 IST" duration-ms="13" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at ExtentReport.Extent_Report.verifyUserName(Extent_Report.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserName -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="getResult" finished-at="2025-06-08T19:06:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserName status=FAILURE method=Extent_Report.verifyUserName()[pri:0, instance:ExtentReport.Extent_Report@1d296da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ExtentReport.Extent_Report@1d296da]" started-at="2025-06-08T19:06:03 IST" name="tearDown" finished-at="2025-06-08T19:06:04 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ExtentReport.Extent_Report -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,44 @@
+Log4j:
+=========
+It is open source and can be easily configured in selenium project.
+Log4j > logging is used for logging information during test execution.
+
+As a part of my framework, we have integrated log4j for logging execution flow and error tracking 
+and monitoring the automation scripts.
+
+To generate log in a selenium framework we need to use log4j jar file.
+
+====================================================================================================
+Log4j has three principle components :
+======================================
+1) Loggers
+2) Appenders
+3) Layout
+
+1) loggers
+ Loggers are responsible for logging informations.
+ 
+ 2) Appender:
+ Define where the message go FileAppender or  console appender.
+ 
+ 3) Layout :
+ How the log message formatted.
+  i) patternLayout
+  ii) htmlLayout
+  iii) JSONLayout
+  
+  ===========================================================================
+  Level:
+  Represents the severity of the log messages.
+  
+ TRACE > DEBUG > INFO > WARN > ERROR > FATAL
+ 
+ TRACE	: Very detailed logs
+ DEGUBG : Debugging informations
+ INFO 	: General informations
+ WARN	: Something unexpected
+ ERROR	: Error that affect the functionality
+ FATAL	: Server error
+ ===============================================================================
+ 
+  

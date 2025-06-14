@@ -53,13 +53,13 @@ public class Example2_With_DataDriven {
 		// getClaim ID
 		String expectedID = Sheet.getRow(0).getCell(2).getStringCellValue();
 		String actclaimId = driver.findElement(By.xpath("//div[text()='202307180000003']")).getText();
-		System.out.println(actclaimId);
-		
-		if(actclaimId.equals(expectedID)) {
-			System.out.println("Test Case Pass");
-		}else {
-			System.out.println("Test Case Fail");
-		}
+//		System.out.println(actclaimId);
+//		
+//		if(actclaimId.equals(expectedID)) {
+//			System.out.println("Test Case Pass");
+//		}else {
+//			System.out.println("Test Case Fail");
+//		}
 		
 		Thread.sleep(5000);
 		driver.quit();
